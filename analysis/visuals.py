@@ -51,12 +51,16 @@ def GetVars(x, y, inds, bkg):
         means.append(round(mean, 3))
         sigmas.append(round(sigma, 3))
         bkgs.append(round(bkg, 2))
+    areas = np.array(areas)
+    means = np.array(means)
+    sigmas = np.array(sigmas)
+    bkgs = np.array(bkgs)
     return areas, means, sigmas, bkgs
 
 def TestFit(x, y, temp):
     d0 = round(min(x), 2)
     d = round(max(x), 2)
-    
+
     area, mean, sigma = GetSeed(x, y)
     bkg, err = GetBkg(y)
     popt, pcov = curve_fit(gaus_b, x, y, p0=[area, mean, sigma, bkg])
@@ -91,6 +95,4 @@ def TestFit(x, y, temp):
     plt.ylabel('Residues')
     plt.subplots_adjust(hspace=.003)
     plt.show()
-
-
     return

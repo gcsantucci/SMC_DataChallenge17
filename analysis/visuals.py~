@@ -51,6 +51,10 @@ def GetVars(x, y, inds, bkg):
         means.append(round(mean, 3))
         sigmas.append(round(sigma, 3))
         bkgs.append(round(bkg, 2))
+    areas = np.array(areas)
+    means = np.array(means)
+    sigmas = np.array(sigmas)
+    bkgs = np.array(bkgs)
     return areas, means, sigmas, bkgs
 
 def TestFit(x, y, temp):
@@ -64,6 +68,7 @@ def TestFit(x, y, temp):
     area, mean, sigma, bkg = popt
     Yhat = np.array([gaus_b(ix, area, mean, sigma, bkg) for ix in x])
     res = Yhat - y
+    chi2 = LSE(x, y, area, mean, sigma, bkg, err)
     
     fig = plt.figure(figsize=(8,7))
     gs = gridspec.GridSpec(2, 1,  height_ratios=[5, 1]) 
@@ -76,10 +81,11 @@ def TestFit(x, y, temp):
     frame = pylab.gca()
     frame.axes.get_xaxis().set_ticks([])
     plt.ylabel('Intensity')
-    plt.annotate('Fit Results for T = {} K:\nA = {}\n$\mu$ = {}\n$\sigma$ = {}'.format(temp,
+    plt.annotate('Fit Results for T = {} K:\nA = {}\n$\mu$ = {}\n$\sigma$ = {}\nChi2={}'.format(temp,
                                                                                        round(area,2),
                                                                                        round(mean,2),
-                                                                                       round(sigma,4)),
+                                                                                       round(sigma,4),
+                                                                                       round(chi2, 2) ),
                  xy=(d0, max(y)*.7))
 
     ax2 = plt.subplot(gs[1])
@@ -89,6 +95,4 @@ def TestFit(x, y, temp):
     plt.ylabel('Residues')
     plt.subplots_adjust(hspace=.003)
     plt.show()
-
-
     return
