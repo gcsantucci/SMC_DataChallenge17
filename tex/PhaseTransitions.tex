@@ -1,0 +1,55 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{mathtools}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    citecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+\usepackage{authblk}
+
+
+\usepackage{amssymb}
+
+%SetFonts
+
+\title{Automated Discovery of Temperature Dependent Structural Change\\
+	\large SMC Data Challenge 2017}
+\author[1]{Gabriel Santucci}
+\affil[1]{Nucleon Decay and Neutrino Group, Stony Brook University Physics Department}
+\date{August 2017}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract.tex}
+
+\input{sections/data.tex}
+
+\input{sections/peak.tex}
+
+\input{sections/find_peaks.tex}
+
+\input{sections/define_transition.tex}
+
+\input{sections/conclusion.tex}
+	
+\begin{thebibliography}{9}
+\bibitem{DetectPeaks}
+\href{http://nbviewer.jupyter.org/github/demotu/BMC/blob/master/notebooks/DetectPeaks.ipynb}{http://nbviewer.jupyter.org/github/demotu/BMC/blob/master/notebooks/DetectPeaks.ipynb}
+
+\bibitem{git}
+\href{	http://github.com/gcsantucci/SMC_DataChallenge_Diffraction}{GitHub Repository}
+
+
+\end{thebibliography}
+	
+\end{document}
+

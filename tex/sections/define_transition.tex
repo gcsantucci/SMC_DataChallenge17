@@ -1,0 +1,12 @@
+
+
+\section{Phase Transitions} \label{DefineTransition}
+	Finally, we are ready to detect a phase transition in the material. Having an algorithm to find all the peaks in the data and a way to characterize them, we can make a comparison between all the peaks found in two different adjacent temperatures and determine if a phase transition occurred or not.
+	Unfortunately, we did not perform a deep study of different ways of detecting a phase transition. In a complete study we can try at least making a peak by peak comparison, but here we propose the following simple criteria:
+	\begin{enumerate}
+	\item Compare the number of peaks in the two data sets. 
+	\item If the number of peaks is different, compare the average width of all the peaks.
+	\item A phase transition occurs if: $|w1 - w2| > 0.005$.
+	\end{enumerate}
+	
+	
