@@ -60,7 +60,7 @@ def GetVars(x, y, inds, bkg):
 def TestFit(x, y, temp):
     d0 = round(min(x), 2)
     d = round(max(x), 2)
-    
+
     area, mean, sigma = GetSeed(x, y)
     bkg, err = GetBkg(y)
     popt, pcov = curve_fit(gaus_b, x, y, p0=[area, mean, sigma, bkg])

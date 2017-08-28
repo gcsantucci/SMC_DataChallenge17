@@ -3,6 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import gridspec, pylab
 
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+def sigmoid_b(x, x0, a, b):
+    return a*sigmoid(x-x0) + b
+
+def sigprime(x, x0, a):
+    return a*sigmoid(x-x0)*(1 - sigmoid(x-x0))
+
 def gaus(x, x0, sigma):
     return (1/(sigma*np.sqrt(2*np.pi))) * np.exp( (pow(x-x0, 2)) / (-2*pow(sigma, 2)) )
 
