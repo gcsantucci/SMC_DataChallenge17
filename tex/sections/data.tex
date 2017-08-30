@@ -3,10 +3,10 @@
 \section{Introduction} \label{Intro}
 	We are interested here in finding an algorithm to decide if a phase transition occurred in a material between two different temperatures. The data structure is given by different curves of Intensity (I) as a function of distance (d - characteristic spacing of the material in Angstroms) for different values of temperature (T).
 To define a phase transition we first study one particular peak in the intensity curves, namely the peak between 3.2 and 3.3 ${\AA}$. The characterization of this peak consists of calculating its center, a characteristic width and the area under it.
-Once we have the characterization procedure we move on  characterize all the peaks in the data set for a given temperature value. Finally, one can define a phase transition by looking at the sets of peaks and its characteristics for two different adjacent curves (temperatures). We define a phase transition as a distinct change in structure of the intensity peaks.
+Once we have the characterization procedure we move on  to characterize all the peaks in the data set for a given temperature value. Finally, one can define a phase transition by looking at the sets of peaks and its characteristics for two different adjacent curves (temperatures). We define a phase transition as a distinct change in structure of the intensity peaks.
 
 \section{Inspecting the Data} \label{Data}
-	Before we inspect any particular peaks, let us look at different sets of curves for randomly chosen values of temperatures to understand how the peak structure is. Figure \ref{fig:randTs}  shows the curves of intensity as a function of d-spacing for random values of T.
+	Before we inspect any particular peaks, let us look at different sets of curves for randomly chosen values of temperatures to understand how the peak structure looks like. Figure \ref{fig:randTs}  shows the curves of intensity as a function of d-spacing for random values of temperature.
 
 \begin{figure}[h]
   \centering
@@ -25,4 +25,20 @@ This is certainly not a general result valid for any data set, but it is valid f
   \includegraphics[scale=0.25]{../figs/maxI.png}
   \caption{Maximum intensity value as a function of function temperature.}
   \label{fig:maxI}
+\end{figure}
+
+Besides looking at the maximum intensity, one can also plot the location of the brightest peak as a function of temperature. Figure \ref{fig:loc} shows that before the brightest peak is around 3.2 Angstroms but after the phase transition, the dominant peak is around 4 A. If we plot the difference between the temperatures at T+1 and T we can clearly see where the jump occurred (Figures \ref{fig:locdiff}).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.25]{../poster/figs/dsmax.png}
+  \caption{Location of the maximum intensity value as a function of function temperature.}
+  \label{fig:loc}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.25]{../figs/dsdiff_T.png}
+  \caption{Difference of maximum intensity value between two adjacent temperatures as a function of function temperature.}
+  \label{fig:locdiff}
 \end{figure}

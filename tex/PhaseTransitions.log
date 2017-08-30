@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.6)  4 AUG 2017 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.6)  30 AUG 2017 18:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,8 +443,21 @@ File: ../figs/maxI.png Graphic file (type png)
  <use ../figs/maxI.png>
 Package pdftex.def Info: ../figs/maxI.png used on input line 25.
 (pdftex.def)             Requested size: 100.12381pt x 69.76045pt.
-)
-(./sections/peak.tex
+
+<../poster/figs/dsmax.png, id=52, 390.45876pt x 279.0425pt>
+File: ../poster/figs/dsmax.png Graphic file (type png)
+
+<use ../poster/figs/dsmax.png>
+Package pdftex.def Info: ../poster/figs/dsmax.png used on input line 34.
+(pdftex.def)             Requested size: 97.61444pt x 69.76045pt.
+ [2 <../figs/randomTs.png> <../figs/maxI.png>]
+<../figs/dsdiff_T.png, id=61, 390.45876pt x 279.0425pt>
+File: ../figs/dsdiff_T.png Graphic file (type png)
+
+<use ../figs/dsdiff_T.png>
+Package pdftex.def Info: ../figs/dsdiff_T.png used on input line 41.
+(pdftex.def)             Requested size: 97.61444pt x 69.76045pt.
+) (./sections/peak.tex
 
 LaTeX Warning: Command \r invalid in math mode on input line 3.
 
@@ -459,29 +472,26 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Command \r invalid in math mode on input line 4.
 
-[2 <../figs/randomTs.png> <../figs/maxI.png>]
 
 LaTeX Warning: Command \r invalid in math mode on input line 18.
 
-<../figs/fits.png, id=62, 736.7525pt x 606.265pt>
+[3 <../poster/figs/dsmax.png> <../figs/dsdiff_T.png>]
+<../figs/fits.png, id=82, 736.7525pt x 606.265pt>
 File: ../figs/fits.png Graphic file (type png)
  <use ../figs/fits.png>
 Package pdftex.def Info: ../figs/fits.png used on input line 23.
 (pdftex.def)             Requested size: 257.86723pt x 212.19592pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../figs/3p25.png, id=63, 745.78625pt x 1152.305pt>
+<../figs/3p25.png, id=83, 859.21pt x 1292.83pt>
 File: ../figs/3p25.png Graphic file (type png)
  <use ../figs/3p25.png>
 Package pdftex.def Info: ../figs/3p25.png used on input line 31.
-(pdftex.def)             Requested size: 186.4461pt x 288.07555pt.
+(pdftex.def)             Requested size: 214.80197pt x 323.20671pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../figs/norm.png, id=64, 711.65875pt x 289.08pt>
+<../figs/norm.png, id=84, 711.65875pt x 289.08pt>
 File: ../figs/norm.png Graphic file (type png)
  <use ../figs/norm.png>
 Package pdftex.def Info: ../figs/norm.png used on input line 39.
@@ -490,39 +500,38 @@ Package pdftex.def Info: ../figs/norm.png used on input line 39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sections/find_peaks.tex [3]
-<../figs/peaks0.png, id=83, 515.9275pt x 283.0575pt>
+) (./sections/find_peaks.tex [4 <../figs/fits.png>] [5 <../figs/3p25.png>]
+<../figs/peaks0.png, id=105, 515.9275pt x 283.0575pt>
 File: ../figs/peaks0.png Graphic file (type png)
  <use ../figs/peaks0.png>
 Package pdftex.def Info: ../figs/peaks0.png used on input line 23.
 (pdftex.def)             Requested size: 128.98155pt x 70.76419pt.
-
-[4 <../figs/fits.png>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./sections/define_transition.tex [5 <../figs/3p25.png>])
-(./sections/conclusion.tex)
+) (./sections/define_transition.tex [6 <../figs/norm.png> <../figs/peaks0.png>]
+) (./sections/conclusion.tex)
 Overfull \hbox (39.7814pt too wide) in paragraph at lines 46--47
 [][][]\OT1/cmr/m/n/10.95 http://nbviewer.jupyter.org/github/demotu/BMC/blob/mas
 ter/notebooks/DetectPeaks.ipynb[][] 
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 54.
-[6 <../figs/norm.png> <../figs/peaks0.png>]
+[7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 54.
  (./PhaseTransitions.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 54.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 54.
 Package rerunfilecheck Info: File `PhaseTransitions.out' has not changed.
 (rerunfilecheck)             Checksum: 8076B924D13DE500447CE63CC006E0B6;344.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 54.
  ) 
 Here is how much of TeX's memory you used:
- 7146 strings out of 493014
- 104890 string characters out of 6133352
- 201722 words of memory out of 5000000
- 10554 multiletter control sequences out of 15000+600000
+ 7162 strings out of 493014
+ 105184 string characters out of 6133352
+ 200969 words of memory out of 5000000
+ 10564 multiletter control sequences out of 15000+600000
  13346 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  33i,7n,31p,634b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -539,10 +548,10 @@ exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on PhaseTransitions.pdf (6 pages, 411955 bytes).
+Output written on PhaseTransitions.pdf (7 pages, 446924 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
