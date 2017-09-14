@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.6)  4 AUG 2017 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.6)  14 SEP 2017 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,12 +7,12 @@ entering extended mode
 (./peak.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-./peak.tex:3: Undefined control sequence.
-l.3 \section
+./peak.tex:1: Undefined control sequence.
+l.1 \section
             {The 3.25 $\AA$ Peak } \label{Peak}
 ? 
-./peak.tex:3: Emergency stop.
-l.3 \section
+./peak.tex:1: Emergency stop.
+l.1 \section
             {The 3.25 $\AA$ Peak } \label{Peak}
 End of file on the terminal!
 
@@ -25,4 +25,4 @@ Here is how much of TeX's memory you used:
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  5i,0n,1p,54b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
-./peak.tex:3:  ==> Fatal error occurred, no output PDF file produced!
+./peak.tex:1:  ==> Fatal error occurred, no output PDF file produced!
